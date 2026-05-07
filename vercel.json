@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/api/subdl-vtt", "destination": "/api/subdl-vtt" },
+    { "source": "/api/subdl",     "destination": "/api/subdl" },
+    { "source": "/api/proxy",     "destination": "/api/proxy" }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ]
+}
